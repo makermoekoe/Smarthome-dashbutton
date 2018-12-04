@@ -13,7 +13,7 @@ The result in general consists out of a small pcb, an ESP8285-M3 microcontroller
 
 ## Requirements
 
-In total the parts four each dashbutton amount to a considerable sum of just 5€.
+In total the parts for each dashbutton amount to a considerable sum of just 5€.
 
 - PCB
 - ESP8285-M3
@@ -26,10 +26,12 @@ In total the parts four each dashbutton amount to a considerable sum of just 5�
 ## Schematics and PCB
 
 
-<a href="images/schematics.png"><img src="images/schematics.png" width="80%" align="center"></a>
+<a href="images/schematics.png"><img src="images/schematics.png" alt="dashbutton schematics" width="80%" align="middle"></a>
 
 Revision 1.3 was my first final version which has some things to optimize. Maybe I will update it in the future but it is working already.
+
 <a href="images/Dashbutton.png"><img src="images/Dashbutton.png" width="80%" align="center"></a>
 
 Revision 2.2 consists of another outer shape of the pcb. It is round with a diameter of 30mm and includes a ground plane over two-thirds of the area. The other third is the antenna of the microcontroller and should not be overlapped with any of the traces or ground signals to reduce interferences.
+
 <a href="images/Dashbutton_round.png"><img src="images/Dashbutton_round.png" width="80%" align="center"></a>
