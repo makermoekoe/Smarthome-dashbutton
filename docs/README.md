@@ -1,6 +1,6 @@
 # Smarthome-dashbutton
 
-Here is something for the smart home lovers which want to control their whole lights, thermostats or any other smart devices from the sofa or with the help of an assistant like Siri.
+Here is something for the smart home lovers which want to control their whole lights, thermostats or any other smart devices from the sofa without the need of actuating the wall switch.
 
 The goal of this project is to build an electronic device which occupies following aspects:
 - one control button
