@@ -1,8 +1,8 @@
 # Smarthome-dashbutton
 
 <div>
-<img src="images/both_front.jpg" width="30%" style="margin:5px">
-<img src="images/both_back.jpg" width="30%" style="margin:5px">
+<img src="images/both_front.jpg" height="50%" style="margin:5px">
+<img src="images/both_back.jpg" height="50%" style="margin:5px">
 </div>
 
 
