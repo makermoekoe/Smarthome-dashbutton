@@ -1,6 +1,6 @@
 # Smarthome-dashbutton
 
-<center><img src="images/both_front.png" width="50%"><img src="images/both_back.png" width="50%"></center>
+<center><img src="images/both_front.jpg" width="30%"><img src="images/both_back.jpg" width="30%"></center>
 
 
 Here is something for the smart home lovers which want to control their whole lights, thermostats or any other smart devices from the sofa without the need of actuating the wall switch.
