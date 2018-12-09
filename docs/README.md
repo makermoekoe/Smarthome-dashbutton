@@ -19,7 +19,9 @@ The goal of this project is to build an electronic device which occupies followi
 The result in general consists out of a small PCB, an ESP8285-M3 microcontroller which has wifi on board and a small 100mAh LiPo battery. Especially because the dashbutton should be as small as possible there are only the most necessary parts onto the PCB. Therefore the ESP has to be flashed by contacting the four wire pads (Rx, Tx, 3.3v, GND) to an external FTDI adapter and a shorten jumper pad (GPIO0). Of course that is not the easiest way, but it does not have to be flashed that often and it reduces the amount of parts needed.
 
 Here is a video to see the first version of the dashbutton in action. (Click on the image)
+
 <a href="https://www.instagram.com/p/Bqrb7guHYCT/?utm_source=ig_web_button_share_sheet"><img src="images/video.png" width="200px"></a>
+
 
 ## Requirements
 
