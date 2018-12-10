@@ -1,12 +1,5 @@
 # Smarthome-dashbutton
 
-<div>
-<img src="images/both_front.jpg" height="250px" style="margin:5px">
-<img src="images/both_back.jpg" height="250px" style="margin:5px">
-</div>
-
-
-
 Here is something for the smart home lovers which want to control their whole lights, thermostats or any other smart devices from the sofa without the need of actuating the wall switch.
 
 The goal of this project is to build an electronic device which occupies following aspects:
@@ -17,6 +10,12 @@ The goal of this project is to build an electronic device which occupies followi
 - wifi ability
 
 The result in general consists out of a small PCB, an ESP8285-M3 microcontroller which has wifi on board and a small 100mAh LiPo battery. Especially because the dashbutton should be as small as possible there are only the most necessary parts onto the PCB. Therefore the ESP has to be flashed by contacting the four wire pads (Rx, Tx, 3.3v, GND) to an external FTDI adapter and a shorten jumper pad (GPIO0). Of course that is not the easiest way, but it does not have to be flashed that often and it reduces the amount of parts needed.
+
+<div>
+<img src="images/both_front.jpg" height="200px" style="margin:5px">
+<img src="images/both_back.jpg" height="200px" style="margin:5px">
+</div>
+
 
 Here is a video to see the first version of the dashbutton in action. (Click on the image)
 
