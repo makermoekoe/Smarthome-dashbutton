@@ -75,3 +75,11 @@ TODO
 
 <center><img src="images/DB_v4_front.png" width="50%"></center>
 <center><img src="images/DB_v4_back.png" width="50%"></center>
+
+## 3D printed case
+
+The dashbutton should get a small case to prevent some damages to the PCB or to the electronics. If you want, you can design your own housing and print it on your 3d printer like I did. You can start from scratch or you can use my case and add some modifications. Obviously, the housing can be found on [Thingiverse](https://www.thingiverse.com/thing:3364771), but I have attached the files here as well.
+
+<center><img src="images/case_v2.jpg" width="50%"></center>
+
+The case or - to be more accurate - the lid for version 3/4 is not ready yet, but I will update it as soon as possible.
