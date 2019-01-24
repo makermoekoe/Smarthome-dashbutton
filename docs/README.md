@@ -57,15 +57,15 @@ Flashing the microcontroller on the pcb may not the easiest part. But thererfore
 
 <center><img src="images/schematics.png" width="80%"></center>
 
-Revision 1.3 was my first final version which has some things to optimize. Maybe I will update it in the future but it is working already.
+__Version 1__ was my first final draft which has some things to optimize. Maybe I will update it in the future but it is working already. The PCB has the outer dimensions of 24x32mm. It is powered by a small LiPo battery and has just a voltage regulating unit for powering the ESP8285-M3. The battery sticks with some doublesided tape on the bottom of the dashbutton.
 
 <center><img src="images/Dashbutton.png" width="80%"></center>
 
-Revision 2.2 consists of another outer shape of the PCB. It is round with a diameter of 30mm and includes a ground plane over two-thirds of the area. The other third is the antenna of the microcontroller and should not be overlapped with any of the traces or ground signals to reduce interferences.
+__Version 2__ consists of another outer shape of the PCB. It is round with a diameter of 30 mm and includes a ground plane over two-thirds of the area. The other third is the antenna of the microcontroller and shouldn't be overlapped with any of the traces or ground signals to reduce interferences. The schematic is the same as version one. And just as version one it is based on an ESP8285-M3.
 
 <center><img src="images/Dashbutton_round.png" width="80%"></center>
 
-Revision 3 has another outer shape as well. Main difference is that it is powered by a standard LIR2450 battery which can be replaced easily if it's getting empty and therefore the PCB has to be a little bit bigger than the other versions. Additionally, it consists of an WS2812b rgb(w) led to inform on different things. Furthermore and in contrast to the other two versions it is based on an ESP8266-07S.
+__Version 3__ has another outer shape as well. Main difference is that it is powered by a standard LIR2450 battery which can be replaced easily if it's getting empty and therefore the PCB has to be a little bit bigger than the other versions. Additionally, it consists of an WS2812b rgb(w) led to inform on different things. Furthermore and in contrast to the other two versions it is based on an ESP8266-07S.
 
 <center><img src="images/DB_v3_front.png" width="50%"></center>
 <center><img src="images/DB_v3_back.png" width="50%"></center>
