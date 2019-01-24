@@ -43,11 +43,13 @@ After rebooting the ESP8285 will connect to the specified wifi network as well a
 The string which will be send by the dashbutton when the button is pressed depends on your used home automation service. In my case I am using the 'programmable switch event' service in HomeKit (HAP-NodeJS) which operates with three states (0, 1, 2). Depending on that state HomeKit is able to act differently. A 0 will be interpreted as a single button press, a 1 will be interpreted as a double button press and a 2 will be interpreted as a long button press. Of course, this functionality is not usable with this kind of dashbutton cause it actually can only detect a single button press (as a microcontroller reset).
 
 
-## FLashing the dashbutton
+## Flashing the dashbutton
 
-The ESP has to be flashed by contacting the four wire pads (Rx, Tx, 3.3v, GND) to an external FTDI adapter. This could be done without soldering some wires to the pads. Just take a 4-pin pinheader and hold it against the four wire pads while flashing. Before this can be done, it is necessary to put the ESP8285 to flash mode by shorten the GPIO0 solder jumper pad between the two capacitors. As soon as the reset button will be pressed the microcontroller will enter flash mode and never run the sketch which has been flashed on before.
+Flashing the microcontroller on the pcb may not the easiest part. But thererfore that the dashbutton should be as small as possible, there are also as less as possible components on it. To flash it, there are three important things which you should make use of.
 
-Open the code with Arduino IDE, add your wifi credentials, select the 'Generic ESP8285' board in the board manager as well as the correct port of your ESP and hit upload. When it is ready with compiling and the 'upload' massage appears the reset button has to be pressed once. After this there should appear some red dots which show the current upload state.
+- The GPIO0 (PROG for version three) wire pad jumper should be shortened to put the ESP in programming mode. Have in mind, that the microcontroller won't start as usual with a shortened GPIO0/PROG wire pad.
+- You have to connect the four wire pads (3,3v - gnd - rx - tx) to an external FTDI adapter. Doing so, you don't have to solder some wires to it. Because I have aligned the four wire pads in the 2,54 mm, grid you can take a 4-pin pinheader, connect it with jumper cables to the FTDI adapter and press it against the wire pads while uploading the sketch. And because a picture is worth than thousand words, I added one showing this process.
+- Right after the uploading message inside the Arduino IDE appears, you have to press the reset button once (it is THE button - the only button on the dashbutton). After this the blue led on the ESP should flash a few times until it flashes constantly while the uploading bar inside the Arduino IDE fills up.
 
 
 ## Schematics and PCB
@@ -62,3 +64,14 @@ Revision 1.3 was my first final version which has some things to optimize. Maybe
 Revision 2.2 consists of another outer shape of the PCB. It is round with a diameter of 30mm and includes a ground plane over two-thirds of the area. The other third is the antenna of the microcontroller and should not be overlapped with any of the traces or ground signals to reduce interferences.
 
 <center><img src="images/Dashbutton_round.png" width="80%"></center>
+
+Revision 3 has another outer shape as well. Main difference is that it is powered by a standard LIR2450 battery which can be replaced easily if it's getting empty and therefore the PCB has to be a little bit bigger than the other versions. Additionally, it consists of an WS2812b rgb(w) led to inform on different things. Furthermore and in contrast to the other two versions it is based on an ESP8266-07S.
+
+<center><img src="images/DB_v3_front.png" width="50%"></center>
+<center><img src="images/DB_v3_back.png" width="50%"></center>
+
+__Revision 4__
+TODO
+
+<center><img src="images/DB_v4_front.png" width="50%"></center>
+<center><img src="images/DB_v4_back.png" width="50%"></center>
