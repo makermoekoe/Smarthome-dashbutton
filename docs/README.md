@@ -70,8 +70,8 @@ __Version 3__ has another outer shape as well. Main difference is that it is pow
 <center><img src="images/DB_v3_front.png" width="50%"></center>
 <center><img src="images/DB_v3_back.png" width="50%"></center>
 
-__Revision 4__
-TODO
+__Version 4__ has the same outer shape as version 3, because it consists of an LIR2450 battery as well. But, as the first version of my dashbuttons, it consists of one more button to act differently in your smart home application. Furthermore you just don't need to shorten the gpio0 solder pad to put the esp in flash mode... I added a small button which pulls the gpio0 to ground while pressing.
+I have removed the WS2812 led, which I added in the last version, because it evokes strange behavior while flashing the microcontroller. Instead of this, I added a normal 1206 led to show the current status of the button.
 
 <center><img src="images/DB_v4_front.png" width="50%"></center>
 <center><img src="images/DB_v4_back.png" width="50%"></center>
