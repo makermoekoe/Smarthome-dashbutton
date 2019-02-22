@@ -84,4 +84,4 @@ The dashbutton should get a small case to prevent some damages to the PCB or to 
 
 <center><img src="images/case_v2.jpg" width="50%"></center>
 
-The case or - to be more accurate - the lid for version 3/4 is not ready yet, but I will update it as soon as possible.
+The case or - to be more accurate - the lid for version 3/4 is not ready yet, but I will update it as soon as possible. And [Version 4](https://www.thingiverse.com/thing:3445746).
