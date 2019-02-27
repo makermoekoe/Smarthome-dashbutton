@@ -34,7 +34,7 @@ In total the parts for each dashbutton amount to a considerable sum of just 5€
 - JST-PH 2mm 90° SMD connector
 - Lipo battery (with dimensions of 25x12mm)
 
-## How the code works
+## How the code works - Basic idea
 
 It is up to you where you want to use the smart home dashbutton for. In my case it is integrated to Apples HomeKit, but it should be easy to shift it to another framework, because the current code is based on a separated bridge which communicates over the MQTT protocol.
 
