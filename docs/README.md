@@ -34,13 +34,16 @@ In total the parts for each dashbutton amount to a considerable sum of just 5€
 - JST-PH 2mm 90° SMD connector
 - Lipo battery (with dimensions of 25x12mm)
 
-## How the code works - Basic idea
+## How the code works
 
 It is up to you where you want to use the smart home dashbutton for. In my case it is integrated to Apples HomeKit, but it should be easy to shift it to another framework, because the current code is based on a separated bridge which communicates over the MQTT protocol.
 
 
 After rebooting, the ESP8285 will connect to the specified wifi network as well as to the MQTT broker (which is in my case the bridge). When the connection could be established the dashbutton sends a single '0' to the MQTT broker before it will go back to deepsleep mode. When the connection couldn't be established within five seconds, it will fall back into deepsleep mode as well, but without publishing anything. This is just for the case if the network is unreachable and the dashbutton tries to connect until the battery is empty. The button itself does the magic by simply resetting the ESP8285.
 The string which will be send by the dashbutton when the button is pressed depends on your used home automation service. In my case I am using the 'programmable switch event' service in HomeKit (HAP-NodeJS) which operates with three states (0, 1, 2). Depending on that state HomeKit is able to act differently. A 0 will be interpreted as a single button press, a 1 will be interpreted as a double button press and a 2 will be interpreted as a long button press. Of course, this functionality is not usable with this kind of dashbutton, because it actually can only detect a single button press (as a microcontroller reset). With version 4 I am trying to add a second button, but more on this later.
+
+### Version 4
+As I said, this version of my dashbutton consists of an extra button, which can be assigned to a different functionality in your application. In my case (HomeKit/HAP-NodeJS) I can assign this extra button for the stateless switch accessory in HAP-NodeJS to the function 'second press'. __BUT__ this button can not be used standalone. As you may read in the upper part, the dashbutton is in deepsleep mode for 99% of the time. To wake it up from there you __have to__ press the RESET button first. Afterwards - in a specific amount of time/till the ESP goes to deepsleep again - you can hit the second button, which just sends another MQTT message to the broker. When not pressing the second button in the specified time, the dashbutton sends the 'normal' MQTT message, which it sends for the older versions of my dashbuttons as well.
 
 
 ## Flashing the dashbutton
