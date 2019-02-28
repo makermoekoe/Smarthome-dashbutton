@@ -93,7 +93,21 @@ The case for Version 4 can be found on [Thingiverse](https://www.thingiverse.com
 
 ## RSSI measurements
 
-__TODO__
+The RSSI measurements listed below refer to the version 4 of my dashbuttons, which is powered by an ESP8285-M1. This ESP version consists of an uFL connector for adding an external antenna. Unfortunately I had to realize that the range of that dashbutton version is something like shit, so I had to do some measurements in order to optimize it.
+
+In the diagrams below I marked three different placements of the dashbutton according to the AP. The __red__ circle is the position directly in front of the AP, __orange__ is about two meters away from it and the distance of the __yellow__ one is about four meters. The unit of the diagrams are dBm.
+
+For testing I used four scenarios (four diagrams):
+- without antenna, open uFL connector
+- with the only uFL antenna I had at home (think it is from an GPS device)
+- with a wire pushed against the middle pin of the uFL connector
+- with a desoldered uFL connector and a standard wire soldered to the antenna pad
+
+Maybe the GPS antenna which I used is not the optimal for it, I don't know :D, but the results of it doesn't make me happy.
+
+Because there is not that much place inside of the dashbuttons I will go with the soldered wire first. If anybody have a better approach, like a very tiny antenna or something else, than please let me know! 
+
+
 
 <center><img src="images/1_RSSI_without.png" width="500"></center>
 
