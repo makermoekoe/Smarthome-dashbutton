@@ -105,7 +105,7 @@ For testing I used four scenarios (four diagrams):
 
 Maybe the GPS antenna which I used is not the optimal for it, I don't know :D, but the results of it doesn't make me happy.
 
-Because there is not that much place inside of the dashbuttons I will go with the soldered wire first. If anybody have a better approach, like a very tiny antenna or something else, than please let me know! 
+Because there is not that much place inside of the dashbuttons I will go with the soldered wire first. If anybody of you has a better approach, like a very tiny antenna or something else, than please let me know!
 
 
 
