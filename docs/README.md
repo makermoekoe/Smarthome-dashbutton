@@ -107,6 +107,7 @@ Maybe the GPS antenna which I used is not the optimal for it, I don't know :D, b
 
 Because there is not that much place inside of the dashbuttons I will go with the soldered wire first. If anybody of you has a better approach, like a very tiny antenna or something else, than please let me know!
 
+What I didn't observed while doing the measurements is that the GND port of my self-designed programming jack is directly under the uFL connector and when I power the board via this connector may it has influences to the measurements.. I have definitely to try it when it is battery powered. 
 
 
 <center><img src="images/1_RSSI_without.png" width="500"></center>
