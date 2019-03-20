@@ -79,6 +79,10 @@ I have removed the WS2812 led, which I added in the last version, because it evo
 <center><img src="images/DB_v4_front.png" width="50%"></center>
 <center><img src="images/DB_v4_back.png" width="50%"></center>
 
+__Version 5__ is basically the same as version 4, but it consists of a 5 way switch instead of two buttons. the switch is used like pressing the middle button resets the µC and afterwards the three directions left, down and right are for acting differently in your application. I am omitting the up direction, because my smart home application HomeKit only allows three different actions for one device and in my case that suffice me. Apart from this the gpios are insufficient.
+
+<center><img src="images/DB_v5.jpg" width="50%"></center>
+
 ## 3D printed case
 
 The dashbutton should get a small case to prevent some damages to the PCB or to the electronics. If you want, you can design your own housing and print it on your 3d printer like I did. You can start from scratch or you can use my case and add some modifications. Obviously, the housing can be found on [Thingiverse](https://www.thingiverse.com/thing:3364771), but I have attached the files here as well.
@@ -107,7 +111,7 @@ Maybe the GPS antenna which I used is not the optimal for it, I don't know :D, b
 
 Because there is not that much place inside of the dashbuttons I will go with the soldered wire first. If anybody of you has a better approach, like a very tiny antenna or something else, than please let me know!
 
-What I didn't observed while doing the measurements is that the GND port of my self-designed programming jack is directly under the uFL connector and when I power the board via this connector may it has influences to the measurements.. I have definitely to try it when it is battery powered. 
+What I didn't observed while doing the measurements is that the GND port of my self-designed programming jack is directly under the uFL connector and when I power the board via this connector may it has influences to the measurements.. I have definitely to try it when it is battery powered.
 
 
 <center><img src="images/1_RSSI_without.png" width="500"></center>
