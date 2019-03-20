@@ -97,7 +97,7 @@ The case for Version 4 can be found on [Thingiverse](https://www.thingiverse.com
 
 ## RSSI measurements
 
-The RSSI measurements listed below refer to the version 4 of my dashbuttons, which is powered by an ESP8285-M1. This ESP version consists of an uFL connector for adding an external antenna. Unfortunately I had to realize that the range of that dashbutton version is something like shit, so I had to do some measurements in order to optimize it.
+The RSSI measurements listed below refer to the version 4 of my dashbuttons, which is powered by an ESP8285-M1. This ESP version consists of an uFL connector for adding an external antenna. Unfortunately I had to realize that the range of that dashbutton version without antenna is something like shit, so I had to do some measurements in order to optimize it.
 
 In the diagrams below I marked three different placements of the dashbutton according to the AP. The __red__ circle is the position directly in front of the AP, __orange__ is about two meters away from it and the distance of the __yellow__ one is about four meters. The unit of the diagrams are dBm.
 
